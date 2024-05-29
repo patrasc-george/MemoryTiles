@@ -1,0 +1,20 @@
+﻿<Window x:Class="MemoryTiles.CreditsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Credits" Height="350" Width="525" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock FontSize="20" TextWrapping="Wrap" TextAlignment="Center">
+    Acest proiect a fost creat de către Patrasc George Daniel cu multă muncă și sudoare, student în anul al II-lea la Facultatea de Matematică și Informatică din cadrul Universității Transilvania din Brașov.
+        </TextBlock>
+
+        <Button Content="Cancel" Grid.Row="1" Click="CancelButton_Click" Margin="10" Width="100" />
+    </Grid>
+</Window>

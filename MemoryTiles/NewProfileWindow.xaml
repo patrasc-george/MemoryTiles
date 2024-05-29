@@ -1,0 +1,22 @@
+﻿<Window x:Class="MemoryTiles.NewProfileWindow"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     Title="New Profile" Height="150" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Name:" Margin="6,5,4,5"/>
+        <TextBox x:Name="profileNameTextBox" Grid.Column="1" Margin="5,8,5,8"/>
+        <Button Content="OK" Grid.Row="2" Grid.ColumnSpan="2" Click="NewProfileButton_Click" Margin="10,10,190,0"/>
+        <Button Content="Cancel" Grid.Row="2" Grid.Column="1" Click="CancelButton_Click" Margin="136,10,10,0"/>
+    </Grid>
+</Window>
